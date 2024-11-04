@@ -1,0 +1,12 @@
+data_path: "data/"
+llm_provider: "openai"  # or "ollama"
+ollama:
+  llm_url: "http://localhost:11434"
+  llm_name: "digilab_assistant"
+openai:
+  api_key: ""
+  llm_name: "gpt-3.5-turbo"  # Example OpenAI model name
+embedding_model: "sentence-transformers/all-mpnet-base-v2"
+qdrant_url: "http://localhost:6333"
+collection_name: "lsbgdocs"
+chunk_size: 256
