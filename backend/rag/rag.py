@@ -1,10 +1,8 @@
 ### Loading the embedder
 
-from llama_index import VectorStoreIndex, SimpleDirectoryReader
-from llama_index import ServiceContext
+from llama_index import VectorStoreIndex
 from llama_index import ServiceContext
 from llama_index import VectorStoreIndex
-from llama_index import StorageContext
 from llama_index.vector_stores.qdrant import QdrantVectorStore
 from llama_index.embeddings import LangchainEmbedding
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings

@@ -6,7 +6,6 @@ from llama_index import (
 )
 from llama_index.vector_stores.qdrant import QdrantVectorStore
 from tqdm import tqdm
-import arxiv
 import os
 import argparse
 import yaml
