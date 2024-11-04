@@ -1,4 +1,4 @@
-# DigilabGPT: The DigiBot Assistant
+# DigilabGPT: The Digilab Assistant
 
 ## Project Overview
 
@@ -45,7 +45,3 @@ To run the project, follow these steps:
 
 3. **Frontend Setup**:
    - Navigate to the frontend directory and follow the README provided there for setup instructions.
-
-## Conclusion
-
-This project aims to enhance the accessibility of information within DigiLab through an intelligent chatbot interface. By leveraging advanced language models and a robust backend, Digibot will serve as a valuable resource for employees seeking information about projects, team members, and organizational details.
