@@ -1,20 +1,6 @@
 # RAG: Research-assistant
 
-![Header](images/readme_header.png)
-
-This project aims to help researchers find answers from a set of research papers with the help of a customized RAG pipeline and a powerfull LLM, all offline and free of cost.
-
-For more details, please checkout the [blog post](https://otmaneboughaba.com/posts/local-rag-api) about this project.
-
-## How it works
-
-![Project Architecture](images/local-rag-architecture.png)
-
-1. Download some research papers from Arxiv
-2. Use Llamaindex to load, chunk, embed and store these documents to a Qdrant database
-3. FastAPI endpoint that receives a query/question, searches through our documents and find the best matching chunks
-4. Feed these relevant documents into an LLM as a context
-5. Generate an easy to understand answer and return it as an API response alongside citing the sources
+This project aims to help LSBG employee
 
 ## Running the project
 
@@ -30,7 +16,7 @@ docker run -p 6333:6333 -v ~/qdrant_storage:/qdrant/storage:z qdrant/qdrant
 python rag/data.py --ingest
 ```
 
-#### Starting Ollama LLM server
+#### Starting Ollama LLM server (optional, just provide openai api keys in config.py for online serving)
 
 Follow [this article](https://otmaneboughaba.com/posts/local-llm-ollama-huggingface/) for more infos on how to run models from hugging face locally with Ollama.
 
@@ -53,13 +39,3 @@ By default, Ollama runs on ```http://localhost:11434```
 ```bash
 uvicorn app:app --reload
 ```
-
-
-## Example
-
-#### Request
-
-![Post Request](images/post_request.png)
-
-#### Response
-![Response](images/response.png)
