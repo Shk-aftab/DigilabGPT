@@ -12,10 +12,10 @@ function Chat() {
   const [showSuggestions, setShowSuggestions] = useState(true);
 
   const prompts = [
-    "What is the research about?",
-    "What are the key findings?",
-    "What methodology was used?",
-    "What are the main conclusions?",
+    "What does DigiLab do?",
+    "What are some of the core projects of DigiLab?",
+    "How is DigiLab tackling the Hybrid Project model (Classic + Agile)",
+    "Latest presentations of DigiLab?",
   ];
 
   const sendMessage = async () => {
@@ -79,7 +79,7 @@ function Chat() {
   return (
     <div className="main-layout">
       <div className="title-header">
-        <h2>Research Assistant</h2>
+        <h2>DigilabGPT</h2>
       </div>
 
       <div className="chat-container">

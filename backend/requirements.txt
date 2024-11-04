@@ -1,4 +1,3 @@
-arxiv==2.1.0
 fastapi==0.109.0
 langchain==0.1.1
 llama_index==0.9.32
